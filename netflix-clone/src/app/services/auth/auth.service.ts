@@ -4,16 +4,20 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class AuthService {
-  private email:string = 'marcelo@senai.com';
+  private email: string = 'lorenagrazy@yahoo.com.br';
 
-  private password:string = '123456789';
+  private password: string = '18181818';
+
+  private email: string = 'carla@yahoo.com.br';
+
+  private password: string = '18181818';
 
   private getCredentialsValidity(
-    email:string,
-    password:string,
+    email: string,
+    password: string,
   ): boolean {
     return this.email === email
-    && this.password === password;
+      && this.password === password;
   }
 
   private setUserStatus(status: boolean): void {
